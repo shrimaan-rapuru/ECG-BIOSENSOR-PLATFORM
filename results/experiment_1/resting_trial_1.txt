@@ -1,0 +1,7 @@
+Date: May 15, 2026
+Time: 1:35 PM
+Condition: Resting
+BPM (manual count): 78
+BPM (pulse oximeter): [check with pulse ox and record]
+Electrode placement: Standard
+Notes: Raw unfiltered signal, option-2 connections
