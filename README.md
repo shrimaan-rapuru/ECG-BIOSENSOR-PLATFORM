@@ -31,5 +31,5 @@ Week 2 of 6 — Signal processing complete
 - Pan & Tompkins (1985) — QRS detection algorithm basis
 - Task Force ESC (1996) — HRV metric standards (SDNN, RMSSD)
 - Serhani et al. (2020) — ECG monitoring accessibility review
-- Satija et al. (2018) — Signal quality assessment framework
+- Kohler et al. (2002) — Software QRS detection principles
 - Christov (2004) — Adaptive threshold QRS detection
