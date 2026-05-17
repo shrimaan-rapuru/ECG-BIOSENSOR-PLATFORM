@@ -26,3 +26,10 @@ Real-time ECG monitoring system with signal processing dashboard.
 
 ## Status
 Week 2 of 6 — Signal processing complete
+
+## Related Work
+- Pan & Tompkins (1985) — QRS detection algorithm basis
+- Task Force ESC (1996) — HRV metric standards (SDNN, RMSSD)
+- Serhani et al. (2020) — ECG monitoring accessibility review
+- Satija et al. (2018) — Signal quality assessment framework
+- Christov (2004) — Adaptive threshold QRS detection
