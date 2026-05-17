@@ -31,8 +31,12 @@ def read_ecg(port=PORT, baud=BAUD_RATE, duration=DURATION):
             continue
     
     ser.close()
+    actual_fs = len(data) / duration
     print(f"Recording complete. {len(data)} samples captured.")
+    print(f"Actual sampling rate: {actual_fs:.1f} Hz")
     return timestamps, data
+    
+    
 
 def save_csv(timestamps, data, filename):
     with open(filename, 'w', newline='') as f:

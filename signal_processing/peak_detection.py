@@ -4,19 +4,19 @@ from scipy.signal import find_peaks
 from filters import full_pipeline
 import matplotlib.pyplot as plt
 
-def detect_r_peaks(filtered_signal, fs=500):
+def detect_r_peaks(filtered_signal, fs=533):
     min_distance = int(0.6 * fs)
     threshold = np.median(filtered_signal) + 0.5 * np.std(filtered_signal)
     peaks, _ = find_peaks(filtered_signal, distance=min_distance, height=threshold)
     return peaks
 
-def calculate_bpm(peaks, fs=500):
+def calculate_bpm(peaks, fs=533):
     if len(peaks) < 2:
         return 0
     rr_intervals = np.diff(peaks) / fs
     return round(60 / np.mean(rr_intervals), 1)
 
-def compute_hrv(peaks, fs=500):
+def compute_hrv(peaks, fs=533):
     if len(peaks) < 3:
         return None
     rr = np.diff(peaks) / fs * 1000
@@ -26,7 +26,7 @@ def main():
     df = pd.read_csv('../results/experiment_1/resting_trial_2.csv')
     raw = df['ecg_value'].values.astype(float)
     timestamps = df['timestamp'].values
-    fs = 500
+    fs = 533
     skip_samples = int(2 * fs)
     raw = raw[skip_samples:]
     timestamps = timestamps[skip_samples:]

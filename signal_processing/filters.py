@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 # ── FILTER FUNCTIONS ──────────────────────────────────────────
 
-def butter_bandpass(data, lowcut=0.5, highcut=40.0, fs=500, order=4):
+def butter_bandpass(data, lowcut=0.5, highcut=40.0, fs=533, order=4):
     """Butterworth bandpass filter — removes baseline drift and high-freq noise"""
     nyq = 0.5 * fs
     low = lowcut / nyq
@@ -13,7 +13,7 @@ def butter_bandpass(data, lowcut=0.5, highcut=40.0, fs=500, order=4):
     b, a = butter(order, [low, high], btype='band')
     return filtfilt(b, a, data)
 
-def notch_filter(data, freq=60.0, fs=500, quality=30):
+def notch_filter(data, freq=60.0, fs=533, quality=30):
     """60Hz notch filter — removes powerline interference"""
     b, a = iirnotch(freq / (0.5 * fs), quality)
     return filtfilt(b, a, data)
@@ -22,7 +22,7 @@ def moving_average(data, window=5):
     """Simple moving average — baseline comparison algorithm"""
     return np.convolve(data, np.ones(window)/window, mode='same')
 
-def full_pipeline(data, fs=500):
+def full_pipeline(data, fs=533):
     """Complete 3-stage filter pipeline"""
     step1 = butter_bandpass(data, fs=fs)
     step2 = notch_filter(step1, fs=fs)
@@ -46,7 +46,7 @@ def main():
     df = pd.read_csv('../results/experiment_1/resting_trial_1.csv')
     raw = df['ecg_value'].values
     timestamps = df['timestamp'].values
-    fs = 500
+    fs = 533
 
     # Apply all three filters
     print("Applying filters...")
