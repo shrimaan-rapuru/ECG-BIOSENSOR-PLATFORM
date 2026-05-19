@@ -1,38 +1,36 @@
-# ECG Biosensor System
+# Real-Time Low-Cost ECG Biosensing & Signal Analysis Platform
 
-Real-time ECG monitoring system with signal processing dashboard.
-
-**Builder:** Shrimaan Rapuru  
+**Builder:** Shrimaan Rapuru — The Early College at Guilford  
 **Timeline:** Summer 2026  
-**Stack:** Arduino, Python, Streamlit, SciPy, EasyEDA  
+**Status:** Week 2 of 6 — Signal processing complete, experiments in progress  
+**GitHub:** github.com/shrimaan-rapuru/ECG-BIOSENSOR
 
-## Results So Far
-- BPM: 81.3 (4.2% error vs manual count)
-- SDNN: 34.46ms
-- RMSSD: 58.9ms
-- Sampling rate: 533Hz
+---
 
-## Hardware
-- SparkFun AD8232 ECG Sensor (SEN-12650)
-- Arduino Uno R4 Minima
-- Kendall Ag/AgCl Electrodes (CAB-12970)
-- ## Hardware Setup
-![Setup Overview](hardware/setup_overview.jpg.jpeg)
-![Electrode Placement](hardware/electrode_placement.jpg.jpeg)
+## Abstract
 
-## Features
-- Real-time ECG signal acquisition at 533Hz (validated)
-- 3-stage filter pipeline (Butterworth + 60Hz notch)
-- R-peak detection and BPM calculation
-- HRV analysis (SDNN, RMSSD)
-- Algorithm comparison (Moving Average vs Butterworth vs Butterworth+Notch)
+Access to electrocardiogram (ECG) monitoring is largely limited to clinical 
+settings due to the high cost of medical-grade devices. This project 
+investigates whether a low-cost, open-source biosensing platform ($102 total) 
+can achieve physiologically meaningful ECG signal quality through optimized 
+signal processing pipelines.
 
-## Status
-Week 2 of 6 — Signal processing complete
+The system acquires real-time cardiac electrical signals using a SparkFun 
+AD8232 analog front-end and Arduino Uno R4 Minima microcontroller at 533Hz, 
+transmits data via USB serial to a Python-based processing pipeline, and 
+applies a three-stage filter cascade (Butterworth bandpass, 60Hz IIR notch, 
+baseline drift correction) before performing R-peak detection and Heart Rate 
+Variability (HRV) analysis.
 
-## Related Work
-- Pan & Tompkins (1985) — QRS detection algorithm basis
-- Task Force ESC (1996) — HRV metric standards (SDNN, RMSSD)
-- Serhani et al. (2020) — ECG monitoring accessibility review
-- Kohler et al. (2002) — Software QRS detection principles
-- Christov (2004) — Adaptive threshold QRS detection
+Initial validation achieved 81.3 BPM detection within 4.2% of manual ground 
+truth, with SDNN of 34.46ms and RMSSD of 58.9ms — both within clinically 
+reported resting HRV ranges. Structured experiments comparing three filtering 
+algorithms and evaluating electrode placement effects are ongoing.
+
+The project is framed as an open-source biomedical engineering investigation 
+into signal reliability and accessible physiological monitoring — not a 
+clinical diagnostic tool.
+
+---
+
+## System Architecture
