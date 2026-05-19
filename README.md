@@ -18,7 +18,7 @@ Real-time ECG monitoring system with signal processing dashboard.
 - Kendall Ag/AgCl Electrodes (CAB-12970)
 
 ## Features
-- Real-time ECG signal acquisition at 500Hz
+- Real-time ECG signal acquisition at 533Hz (validated)
 - 3-stage filter pipeline (Butterworth + 60Hz notch)
 - R-peak detection and BPM calculation
 - HRV analysis (SDNN, RMSSD)
