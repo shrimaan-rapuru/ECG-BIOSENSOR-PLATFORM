@@ -16,6 +16,9 @@ Real-time ECG monitoring system with signal processing dashboard.
 - SparkFun AD8232 ECG Sensor (SEN-12650)
 - Arduino Uno R4 Minima
 - Kendall Ag/AgCl Electrodes (CAB-12970)
+- ## Hardware Setup
+![Setup Overview](hardware/setup_overview.jpg.jpeg)
+![Electrode Placement](hardware/electrode_placement.jpg.jpeg)
 
 ## Features
 - Real-time ECG signal acquisition at 533Hz (validated)
