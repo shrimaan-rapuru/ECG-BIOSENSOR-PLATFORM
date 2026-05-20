@@ -1,0 +1,21 @@
+python -c "
+import serial, time
+ser = serial.Serial('COM3', 115200, timeout=1)
+time.sleep(2)
+print('Counting peaks for 10 seconds... sit still!')
+data = []
+start = time.time()
+while time.time() - start < 10:
+    line = ser.readline().decode('utf-8').strip()
+    try:
+        data.append(int(line))
+    except:
+        pass
+ser.close()
+import numpy as np
+from scipy.signal import find_peaks
+peaks, _ = find_peaks(data, distance=300, height=max(data)*0.85)
+bpm = len(peaks) * 6
+print(f'Peaks counted: {len(peaks)}')
+print(f'Estimated BPM: {bpm}')
+"
