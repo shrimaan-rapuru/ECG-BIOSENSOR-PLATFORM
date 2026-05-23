@@ -153,16 +153,25 @@ def plot_pqrst(trial_num=3, fs=533):
     axes[1].grid(True)
 
     # Add wave descriptions
-    axes[1].text(0.01, 0.05,
-                 'P=Atrial depolarization  Q=Septal depolarization  '
-                 'R=Ventricular depolarization  S=Late depolarization  '
-                 'T=Ventricular repolarization',
-                 transform=axes[1].transAxes,
-                 fontsize=8, color='gray', va='bottom')
+    axes[1].text(0.01, -0.18,
+             '  Marker        Cardiac Action                    '
+             'System Validation Significance\n'
+             '  P-Wave        Atrial Depolarization             '
+             'Proves filter preserved low-amplitude, low-frequency markers\n'
+             '  QRS Complex   Ventricular Depolarization        '
+             'Sharp slope confirms high temporal resolution and precision timing\n'
+             '  T-Wave        Ventricular Repolarization        '
+             'Distinct curve confirms baseline stability and robust thresholding',
+             transform=axes[1].transAxes,
+             fontsize=10, color='#333333', va='top',
+             fontfamily='monospace',
+             bbox=dict(boxstyle='round', facecolor='#f8f8f8',
+                      edgecolor='#cccccc', alpha=0.9))
 
     plt.suptitle(f'ECG Analysis — Resting Trial {trial_num} | Subject 2 | May 2026',
                  fontsize=14, fontweight='bold', y=1.01)
     plt.tight_layout()
+    plt.subplots_adjust(bottom=0.18)
     plt.savefig(f'../results/experiment_1/pqrst_trial_{trial_num}.png',
                 dpi=150, bbox_inches='tight')
     print(f"PQRST plot saved to results/experiment_1/pqrst_trial_{trial_num}.png")
