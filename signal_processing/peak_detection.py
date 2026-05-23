@@ -23,13 +23,15 @@ def compute_hrv(peaks, fs=533):
     return {'SDNN_ms': round(np.std(rr), 2), 'RMSSD_ms': round(np.sqrt(np.mean(np.diff(rr)**2)), 2), 'mean_RR_ms': round(np.mean(rr), 2), 'num_beats': len(peaks)}
 
 def main():
-    df = pd.read_csv('../results/experiment_1/resting_trial_2.csv')
+    df = pd.read_csv('../results/experiment_1/resting_trial_5.csv')
     raw = df['ecg_value'].values.astype(float)
     timestamps = df['timestamp'].values
     fs = 533
     skip_samples = int(2 * fs)
     raw = raw[skip_samples:]
     timestamps = timestamps[skip_samples:]
+    raw = np.clip(raw, np.percentile(raw, 1), np.percentile(raw, 99))
+    raw = -raw  # Invert signal — electrode polarity reversed
     raw = np.clip(raw, np.percentile(raw, 1), np.percentile(raw, 99))
     filtered = full_pipeline(raw, fs=fs)
     print(f"Min: {filtered.min():.3f} Max: {filtered.max():.3f} Std: {filtered.std():.3f}")
