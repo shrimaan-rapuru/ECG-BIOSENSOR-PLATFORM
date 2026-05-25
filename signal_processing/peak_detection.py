@@ -87,4 +87,4 @@ def main():
     plot_single_beat(filtered, peaks, timestamps, fs=fs)
 
 if __name__ == "__main__":
-    main()
+
