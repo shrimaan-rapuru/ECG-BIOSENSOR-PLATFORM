@@ -49,7 +49,7 @@ def plot_single_beat(filtered, peaks, timestamps, fs=533):
     print("Single beat plot saved to results/experiment_1/single_beat_pqrst.png")
     plt.show()
 def main():
-    df = pd.read_csv('../results/experiment_1/recovery_trial_2.csv')
+    df = pd.read_csv('../results/experiment_2/placement_both_off_3.csv')
     raw = df['ecg_value'].values.astype(float)
     timestamps = df['timestamp'].values
     fs = 533
@@ -87,4 +87,4 @@ def main():
     plot_single_beat(filtered, peaks, timestamps, fs=fs)
 
 if __name__ == "__main__":
-
+    main()
