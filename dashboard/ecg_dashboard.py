@@ -289,8 +289,10 @@ if st.session_state.recording:
                 ))
 
                 if len(peaks_in_window) > 0:
-                    peak_times = disp_times[peaks_in_window]
-                    peak_vals = disp_filtered[peaks_in_window]
+                    valid_peaks = peaks_in_window[peaks_in_window < len(disp_times)]
+                    peak_times = disp_times[valid_peaks]
+                    peak_vals = disp_filtered[valid_peaks]
+                    
                     fig.add_trace(go.Scatter(
                         x=peak_times, y=peak_vals,
                         mode='markers',
