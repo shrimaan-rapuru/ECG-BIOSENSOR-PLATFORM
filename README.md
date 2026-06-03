@@ -102,6 +102,14 @@ actually reach the people who need them most?
 | LO+ | D10 | Lead-off detect + |
 | LO- | D11 | Lead-off detect - |
 
+### Hardware Photos
+
+| | |
+|---|---|
+| ![Hardware](hardware/subject_photos/hardware_closeup.jpg) | ![Electrodes](hardware/subject_photos/electrode_placement.jpg) |
+| Hardware setup — AD8232 + Arduino R4 Minima | Electrode placement on subject |
+| ![Validation](hardware/subject_photos/apple_watch_validation.jpg) | ![Setup](hardware/subject_photos/full_setup_overview.jpg) |
+| Apple Watch BPM validation — simultaneous recording | Full system setup overview |
 ### Electrode Placement
 - **Red** -> Right chest (below collarbone)
 - **Blue** -> Left chest (below collarbone)
