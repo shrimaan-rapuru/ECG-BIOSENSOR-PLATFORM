@@ -10,7 +10,7 @@ def butter_bandpass_filter(data, lowcut=0.5, highcut=40.0, fs=533, order=4):
 
 def plot_pqrst(trial_num=3, fs=533):
     # Load data
-    df = pd.read_csv(f'../results/experiment_1/resting_trial_{trial_num}.csv')
+    df = pd.read_csv('../results/experiment_1/subject_5_pqrst_trial.csv')
     raw = df['ecg_value'].values.astype(float)
     timestamps = df['timestamp'].values
 
@@ -168,7 +168,7 @@ def plot_pqrst(trial_num=3, fs=533):
              bbox=dict(boxstyle='round', facecolor='#f8f8f8',
                       edgecolor='#cccccc', alpha=0.9))
 
-    plt.suptitle(f'ECG Analysis — Resting Trial {trial_num} | Subject 2 | May 2026',
+    plt.suptitle(f'ECG Analysis — Subject 5 | Resting | Summer 2026',
                  fontsize=14, fontweight='bold', y=1.01)
     plt.tight_layout()
     plt.subplots_adjust(bottom=0.18)
