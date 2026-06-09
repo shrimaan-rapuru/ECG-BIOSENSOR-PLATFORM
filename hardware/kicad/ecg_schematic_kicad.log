@@ -1,0 +1,44 @@
+WARNING: KICAD_SYMBOL_DIR environment variable is missing, so the default KiCad symbol libraries won't be searched. @ [C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\<frozen importlib._bootstrap_external>:995=>C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\<frozen importlib._bootstrap>:488]
+WARNING: KICAD6_SYMBOL_DIR environment variable is missing, so the default KiCad symbol libraries won't be searched. @ [C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\<frozen importlib._bootstrap_external>:995=>C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\<frozen importlib._bootstrap>:488]
+WARNING: KICAD7_SYMBOL_DIR environment variable is missing, so the default KiCad symbol libraries won't be searched. @ [C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\<frozen importlib._bootstrap_external>:995=>C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\<frozen importlib._bootstrap>:488]
+WARNING: KICAD8_SYMBOL_DIR environment variable is missing, so the default KiCad symbol libraries won't be searched. @ [C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\<frozen importlib._bootstrap_external>:995=>C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\<frozen importlib._bootstrap>:488]
+WARNING: KICAD9_SYMBOL_DIR environment variable is missing, so the default KiCad symbol libraries won't be searched. @ [C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\<frozen importlib._bootstrap_external>:995=>C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\<frozen importlib._bootstrap>:488]
+WARNING: fp-lib-table file was not found. Component footprints are not available.
+WARNING: fp-lib-table file was not found. Component footprints are not available.
+WARNING: fp-lib-table file was not found. Component footprints are not available.
+WARNING: fp-lib-table file was not found. Component footprints are not available.
+WARNING: Missing tag on C instantiated at C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\ecg_schematic_kicad.py:74.
+WARNING: Random tag 0vu7oGA3Be generated for C.
+WARNING: Missing tag on C instantiated at C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\ecg_schematic_kicad.py:80.
+WARNING: Random tag IVFhSG1WSL generated for C.
+WARNING: Missing tag on C instantiated at C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\ecg_schematic_kicad.py:74.
+WARNING: Random tag Xe28lwpn5y generated for C.
+WARNING: Missing tag on C instantiated at C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\ecg_schematic_kicad.py:80.
+WARNING: Random tag 7W83mGV_OY generated for C.
+WARNING: Missing tag on C instantiated at C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\ecg_schematic_kicad.py:74.
+WARNING: Random tag MxilGJzsNV generated for C.
+WARNING: Missing tag on C instantiated at C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\ecg_schematic_kicad.py:80.
+WARNING: Random tag yFDGqfQJwu generated for C.
+WARNING: Missing tag on R instantiated at C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\ecg_schematic_kicad.py:87.
+WARNING: Random tag oLtoKAZnHO generated for R.
+WARNING: Missing tag on R instantiated at C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\ecg_schematic_kicad.py:93.
+WARNING: Random tag CiFXGwxdtj generated for R.
+WARNING: Missing tag on R instantiated at C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\ecg_schematic_kicad.py:87.
+WARNING: Random tag Q6drYuUIkS generated for R.
+WARNING: Missing tag on R instantiated at C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\ecg_schematic_kicad.py:93.
+WARNING: Random tag cJCzu53Abc generated for R.
+WARNING: Missing tag on PJ320A instantiated at C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\ecg_schematic_kicad.py:106.
+WARNING: Random tag sfETcg6htO generated for PJ320A.
+WARNING: Missing tag on PJ320A instantiated at C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\ecg_schematic_kicad.py:113.
+WARNING: Random tag M1pyI2wMD8 generated for PJ320A.
+WARNING: Missing tag on Conn1x9 instantiated at C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\ecg_schematic_kicad.py:118.
+WARNING: Random tag eTES0VnedD generated for Conn1x9.
+WARNING: Missing tag on Conn1x9 instantiated at C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\ecg_schematic_kicad.py:123.
+WARNING: Random tag peKzxrplKL generated for Conn1x9.
+WARNING: Missing tag on AD8232ACPZ-R7 instantiated at C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\ecg_schematic_kicad.py:30.
+WARNING: Random tag O8XpHBE4ku generated for AD8232ACPZ-R7.
+WARNING: Missing tag on ad8232_1 instantiated at C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\ecg_schematic_kicad.py:142.
+WARNING: Missing tag on  instantiated at C:\Users\sivak\OneDrive\Documents\ecg-biosensor\hardware\kicad\<frozen importlib._bootstrap>:488.
+INFO: 36 warnings found while generating netlist.
+INFO: 0 errors found while generating netlist.
+

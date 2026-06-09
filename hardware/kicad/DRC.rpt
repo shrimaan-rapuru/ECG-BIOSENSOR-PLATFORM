@@ -1,0 +1,235 @@
+** Drc report for ECG-Biosensor-AD8232.kicad_pcb **
+** Created on 2026-06-08T23:01:49-0400 **
+
+** Found 52 DRC violations **
+[annular_width]: Annular width (board setup constraints min annular width 0.1000 mm; actual 0.0000 mm)
+    Rule: ; error
+    @(24.3500 mm, 45.0000 mm): PTH pad [<no net>] of J1
+[annular_width]: Annular width (board setup constraints min annular width 0.1000 mm; actual 0.0000 mm)
+    Rule: ; error
+    @(31.3500 mm, 45.0000 mm): PTH pad [<no net>] of J1
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1289 mm)
+    Rule: ; error
+    @(46.1300 mm, 39.0000 mm): Pad 1 [<no net>] of U1 on F.Cu
+    @(45.1700 mm, 40.0000 mm): PTH pad 6 [<no net>] of J2
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: ; error
+    @(46.1300 mm, 39.5000 mm): Pad 2 [ECG_INP] of U1 on F.Cu
+    @(45.1700 mm, 40.0000 mm): PTH pad 6 [<no net>] of J2
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: ; error
+    @(46.1300 mm, 40.0000 mm): Pad 3 [ECG_INN] of U1 on F.Cu
+    @(45.1700 mm, 40.0000 mm): PTH pad 6 [<no net>] of J2
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: ; error
+    @(46.1300 mm, 40.5000 mm): Pad 4 [RLD] of U1 on F.Cu
+    @(45.1700 mm, 40.0000 mm): PTH pad 6 [<no net>] of J2
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.1289 mm)
+    Rule: ; error
+    @(46.1300 mm, 41.0000 mm): Pad 5 [RLD] of U1 on F.Cu
+    @(45.1700 mm, 40.0000 mm): PTH pad 6 [<no net>] of J2
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0100 mm)
+    Rule: ; error
+    @(49.8700 mm, 41.0000 mm): Pad 11 [LO_MINUS] of U1 on F.Cu
+    @(50.2500 mm, 40.0000 mm): PTH pad 8 [<no net>] of J2
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: ; error
+    @(49.8700 mm, 40.5000 mm): Pad 12 [LO_PLUS] of U1 on F.Cu
+    @(50.2500 mm, 40.0000 mm): PTH pad 8 [<no net>] of J2
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: ; error
+    @(49.8700 mm, 40.0000 mm): Pad 13 [VCC] of U1 on F.Cu
+    @(50.2500 mm, 40.0000 mm): PTH pad 8 [<no net>] of J2
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: ; error
+    @(49.8700 mm, 39.5000 mm): Pad 14 [GND] of U1 on F.Cu
+    @(50.2500 mm, 40.0000 mm): PTH pad 8 [<no net>] of J2
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0100 mm)
+    Rule: ; error
+    @(49.8700 mm, 39.0000 mm): Pad 15 [<no net>] of U1 on F.Cu
+    @(50.2500 mm, 40.0000 mm): PTH pad 8 [<no net>] of J2
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: ; error
+    @(48.0000 mm, 40.0000 mm): Pad 21 [GND] of U1 on F.Cu
+    @(47.7100 mm, 40.0000 mm): PTH pad 7 [<no net>] of J2
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: ; error
+    @(61.3000 mm, 40.0000 mm): Pad 1 [VCC] of C3 on F.Cu
+    @(60.4100 mm, 40.0000 mm): PTH pad 12 [<no net>] of J2
+[clearance]: Clearance violation (netclass 'Default' clearance 0.2000 mm; actual 0.0000 mm)
+    Rule: ; error
+    @(62.7000 mm, 40.0000 mm): Pad 2 [GND] of C3 on F.Cu
+    @(62.9500 mm, 40.0000 mm): PTH pad 13 [<no net>] of J2
+[courtyards_overlap]: Courtyards overlap
+    Rule: ; error
+    @(48.0000 mm, 40.0000 mm): Footprint U1
+    @(82.0000 mm, 40.0000 mm): Footprint J2
+[courtyards_overlap]: Courtyards overlap
+    Rule: ; error
+    @(62.0000 mm, 40.0000 mm): Footprint C3
+    @(82.0000 mm, 40.0000 mm): Footprint J2
+[padstack]: Padstack is questionable (PTH pad hole non fully inside copper)
+    Local override; warning
+    @(24.3500 mm, 45.0000 mm): PTH pad [<no net>] of J1
+[padstack]: Padstack is questionable (PTH pad hole non fully inside copper)
+    Local override; warning
+    @(31.3500 mm, 45.0000 mm): PTH pad [<no net>] of J1
+[invalid_outline]: Board has malformed outline (not a closed shape)
+    Local override; error
+    @(10.0000 mm, 60.0000 mm): Segment on Edge.Cuts
+[invalid_outline]: Board has malformed outline (not a closed shape)
+    Local override; error
+    @(150.0000 mm, 13.5000 mm): Segment on Edge.Cuts
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(60.6100 mm, 40.4000 mm): Segment on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(61.7200 mm, 39.2900 mm): Segment on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(61.7200 mm, 40.7100 mm): Segment on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(62.2800 mm, 39.2900 mm): Segment on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(62.2800 mm, 40.7100 mm): Segment on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(63.3900 mm, 39.6000 mm): Segment on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(60.9200 mm, 39.6000 mm): Arc on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(60.9200 mm, 40.4000 mm): Arc on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(63.0800 mm, 39.6000 mm): Arc on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(63.0800 mm, 40.4000 mm): Arc on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(61.2000 mm, 40.4000 mm): Circle on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(47.2000 mm, 52.4000 mm): Circle on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(31.2000 mm, 38.7300 mm): Segment on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(132.8000 mm, 41.2700 mm): Segment on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(64.0000 mm, 32.6300 mm): Circle on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(53.2000 mm, 52.4000 mm): Circle on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(59.0000 mm, 32.6300 mm): Circle on F.Silkscreen
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(46.1300 mm, 39.5000 mm): Pad 2 [ECG_INP] of U1 on F.Cu
+    @(45.1700 mm, 40.0000 mm): PTH pad 6 [<no net>] of J2
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(46.1300 mm, 40.0000 mm): Pad 3 [ECG_INN] of U1 on F.Cu
+    @(45.1700 mm, 40.0000 mm): PTH pad 6 [<no net>] of J2
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(46.1300 mm, 40.5000 mm): Pad 4 [RLD] of U1 on F.Cu
+    @(45.1700 mm, 40.0000 mm): PTH pad 6 [<no net>] of J2
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(49.8700 mm, 40.5000 mm): Pad 12 [LO_PLUS] of U1 on F.Cu
+    @(50.2500 mm, 40.0000 mm): PTH pad 8 [<no net>] of J2
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(49.8700 mm, 40.0000 mm): Pad 13 [VCC] of U1 on F.Cu
+    @(50.2500 mm, 40.0000 mm): PTH pad 8 [<no net>] of J2
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(49.8700 mm, 39.5000 mm): Pad 14 [GND] of U1 on F.Cu
+    @(50.2500 mm, 40.0000 mm): PTH pad 8 [<no net>] of J2
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(48.0000 mm, 40.0000 mm): Pad 21 [GND] of U1 on F.Cu
+    @(47.7100 mm, 40.0000 mm): PTH pad 7 [<no net>] of J2
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(61.3000 mm, 40.0000 mm): Pad 1 [VCC] of C3 on F.Cu
+    @(60.4100 mm, 40.0000 mm): PTH pad 12 [<no net>] of J2
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(62.7000 mm, 40.0000 mm): Pad 2 [GND] of C3 on F.Cu
+    @(62.9500 mm, 40.0000 mm): PTH pad 13 [<no net>] of J2
+[silk_overlap]: Silkscreen overlap
+    Rule: ; warning
+    @(45.9200 mm, 37.9200 mm): Segment on F.Silkscreen
+    @(31.2000 mm, 38.7300 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: ; warning
+    @(45.9200 mm, 42.0800 mm): Segment on F.Silkscreen
+    @(132.8000 mm, 41.2700 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: ; warning
+    @(45.3400 mm, 39.0000 mm): Circle on F.Silkscreen
+    @(31.2000 mm, 38.7300 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: ; warning
+    @(50.0800 mm, 37.9200 mm): Segment on F.Silkscreen
+    @(31.2000 mm, 38.7300 mm): Segment on F.Silkscreen
+[silk_overlap]: Silkscreen overlap
+    Rule: ; warning
+    @(50.0800 mm, 42.0800 mm): Segment on F.Silkscreen
+    @(132.8000 mm, 41.2700 mm): Segment on F.Silkscreen
+
+** Found 10 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(49.8700 mm, 40.0000 mm): Pad 13 [VCC] of U1 on F.Cu
+    @(49.0000 mm, 38.1300 mm): Track [VCC] on F.Cu, length 0.7942 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(61.3000 mm, 40.0000 mm): Pad 1 [VCC] of C3 on F.Cu
+    @(67.0067 mm, 32.8182 mm): Track [VCC] on F.Cu, length 6.3889 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(48.0000 mm, 40.0000 mm): Pad 21 [GND] of U1 on F.Cu
+    @(49.8700 mm, 39.5000 mm): Pad 14 [GND] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(61.0000 mm, 32.9767 mm): Track [GND] on F.Cu, length 5.0000 mm
+    @(62.7000 mm, 40.0000 mm): Pad 2 [GND] of C3 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(61.0000 mm, 32.9767 mm): Track [GND] on F.Cu, length 19.2878 mm
+    @(48.0000 mm, 40.0000 mm): Pad 21 [GND] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(45.9589 mm, 41.1711 mm): Track [RLD] on F.Cu, length 0.2420 mm
+    @(46.1300 mm, 40.5000 mm): Pad 4 [RLD] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(25.9500 mm, 42.7000 mm): PTH pad 5 [ECG_INP] of J1
+    @(46.1300 mm, 39.5000 mm): Pad 2 [ECG_INP] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(28.9500 mm, 42.7000 mm): PTH pad 3 [ECG_INN] of J1
+    @(46.1300 mm, 40.0000 mm): Pad 3 [ECG_INN] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(42.6300 mm, 40.0000 mm): PTH pad 5 [LO_MINUS] of J2
+    @(49.8700 mm, 41.0000 mm): Pad 11 [LO_MINUS] of U1 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(40.0900 mm, 40.0000 mm): PTH pad 4 [LO_PLUS] of J2
+    @(49.8700 mm, 40.5000 mm): Pad 12 [LO_PLUS] of U1 on F.Cu
+
+** Found 0 Footprint errors **
+
+** End of Report **

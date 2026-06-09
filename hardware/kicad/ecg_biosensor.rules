@@ -1,0 +1,56 @@
+
+(rules PCB ecg_biosensor.dsn
+  (snap_angle 
+    fortyfive_degree
+  )
+  (rule
+    (width 200.0)
+    (clearance 200.0)
+    (clearance 100.0 (type smd_to_turn_gap))
+    (clearance 50.0 (type smd))
+    (clearance 200.0 (type "kicad_default"))
+  )
+  (padstack "Via[0-1]_600:300_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_600:300_um" "Via[0-1]_600:300_um" default
+  )
+  (via 
+    "Via[0-1]_600:300_um-kicad_default" "Via[0-1]_600:300_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_600:300_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_600:300_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    VCC REFIN GND RLD "ECG_INP" "ECG_OUT" "ECG_INN" "LO_MINUS"
+    "LO_PLUS" REFOUT IAOUT "J1_SLEEVE"
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 200.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
