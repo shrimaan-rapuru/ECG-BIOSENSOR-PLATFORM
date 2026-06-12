@@ -62,9 +62,6 @@ def load_ecg_data():
         raw = raw[skip:]
         timestamps = timestamps[skip:]
         raw = np.clip(raw, np.percentile(raw, 1), np.percentile(raw, 99))
-        st.write("CSV loaded. Columns:", list(df.columns))
-        st.write(df.head(2))
-        st.caption(f"CSV loaded: {len(df)} rows, columns: {list(df.columns)}")
         return -raw, timestamps
     except Exception as e:
         st.error(f"Could not load data: {e}")
