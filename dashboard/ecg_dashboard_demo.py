@@ -53,7 +53,7 @@ def calculate_hrv(peaks, fs=533):
 
 @st.cache_data
 def load_ecg_data():
-    url = "https://raw.githubusercontent.com/shrimaan-rapuru/ECG-BIOSENSOR/main/results/experiment_1/resting_trial_3.csv"
+    url = "https://raw.githubusercontent.com/shrimaan-rapuru/ECG-BIOSENSOR/master/results/experiment_1/resting_trial_3.csv"
     try:
         df = pd.read_csv(url)
         raw = df['ecg_value'].values.astype(float)
