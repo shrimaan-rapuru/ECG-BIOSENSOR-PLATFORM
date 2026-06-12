@@ -60,7 +60,7 @@ def load_ecg_data():
         timestamps = df['timestamp'].values
         skip = int(2 * 533)
         raw = raw[skip:]
-        timestamps = np.arange(len(raw)) / fs
+        timestamps = np.arange(len(raw)) / 533.0
         raw = np.clip(raw, np.percentile(raw, 1), np.percentile(raw, 99))
         return -raw, timestamps
     except Exception as e:
